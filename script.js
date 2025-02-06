@@ -40,3 +40,40 @@ window.onbeforeunload = function () {
   }
  
 
+//<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+const swiper = new Swiper(".swiper", {
+ loop: false,
+
+  slidesPerView: 'auto',
+  spaceBetween: '6em',
+  centeredSlides:true,
+
+  keyboard: {
+   enabled: true,
+   onlyInViewport: false,
+ },
+ 
+
+ scrollbar: {
+   // el: '.swiper-scrollbar',
+   draggable: true,
+   enabled: true
+ },
+
+ mousewheel: {
+   releaseOnEdges: true,
+   sensitivity:2
+ },
+ freeMode:true,
+
+ allowTouchMove:true,
+ simulateTouch: true,
+ touchRatio:1,
+
+ touchStartPreventDefault: true,
+   passiveListeners: false,
+
+
+ });
